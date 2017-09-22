@@ -24,7 +24,8 @@ func subtract (op1: Double,op2: Double) -> Double {
     return op1 - op2
 }
 struct CalculatorBrain {
-    
+    private var accumul: Double?
+
     private var accumulator: Double?
     private enum Operation {
         case constant(Double)
